@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>refrigirator</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>lgservlet</servlet-name>
+  <servlet-class>com.project.refrigirator.lgservlet</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+   <servlet>
+  <servlet-name>sonyservlet</servlet-name>
+  <servlet-class>com.project.refrigirator.sonyservlet</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+   <servlet>
+  <servlet-name>voltas</servlet-name>
+  <servlet-class>com.project.refrigirator.voltas</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+   <servlet>
+  <servlet-name>samsung</servlet-name>
+  <servlet-class> com.project.refrigirator.samsung </servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+    <servlet>
+  <servlet-name>bosch</servlet-name>
+  <servlet-class>com.project.refrigirator.bosch</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+    <servlet>
+  <servlet-name>panasonic</servlet-name>
+  <servlet-class>com.project.refrigirator.panasonic</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+     <servlet>
+  <servlet-name>whirlpool</servlet-name>
+  <servlet-class>com.project.refrigirator.whirlpool</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>lgservlet</servlet-name>
+  <url-pattern>/save</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>sonyservlet</servlet-name>
+  <url-pattern>/update</url-pattern>
+  
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>voltas</servlet-name>
+  <url-pattern>/update1</url-pattern>
+  
+  
+  </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>samsung</servlet-name>
+  <url-pattern>/update2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+   <servlet-name>bosch</servlet-name>
+  <url-pattern>/update3</url-pattern>
+   </servlet-mapping>
+    <servlet-mapping>
+   <servlet-name>panasonic</servlet-name>
+  <url-pattern>/update4</url-pattern>
+   </servlet-mapping>
+    <servlet-mapping>
+   <servlet-name>whirlpool</servlet-name>
+  <url-pattern>/update5</url-pattern>
+   </servlet-mapping>
+ 
+  
+</web-app>
